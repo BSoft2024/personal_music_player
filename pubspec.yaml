@@ -1,0 +1,32 @@
+name: personal_music_player
+description: Offline music player for your own discography. Load your songs, covers and a simple spreadsheet — no coding required after setup.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  just_audio: ^0.9.40
+  audio_session: ^0.1.21
+  excel: ^4.0.6
+  provider: ^6.1.2
+  google_fonts: ^6.2.1
+  shared_preferences: ^2.3.3
+  path: ^1.9.0
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sample_songs.xlsx
+    - assets/audio/
+    - assets/covers/
